@@ -1,0 +1,135 @@
+{
+    "Electronics": {
+        "title": "Electronics & Communication",
+        "colorClass":"neonPurple",
+        "sections": [
+            {
+                "name": "Softwares",
+                "content": ["LTspice", "Proteus", "Logisim", "MATLAB"]
+            },
+            {
+                "name": "Analog Electronics",
+                "content": ["BJT", "MOSFET", "Op-Amps", "Filters", "Rectifiers", "Voltage Regulators", "Oscillators"]
+            },
+            {
+                "name": "Digital Communication",
+                "content": ["Modulation Techniques", "Error Detection & Correction"]
+            },
+            {
+                "name": "Signal Processing",
+                "content": ["FFT", "DFT", "Filters"]
+            },
+            {
+                "name": "VLSI & FPGA",
+                "content": ["Verilog", "Logic Gates", "Sequential & Combinational Circuits"]
+            }
+        ]
+    },
+    "Development": {
+        "title": "Development",
+        "colorClass":"neonBlue",
+        "sections": [
+            {
+                "name": "Skills",
+                "content": ["Web Development", "Data Structures & Algorithms: Java & Python", "Object Oriented Programming"]
+            },
+            {
+                "name": "Languages",
+                "content": {
+                    "Python": "devicon-python-plain colored",
+                    "Java": "devicon-java-plain colored",
+                    "JavaScript": "devicon-javascript-plain colored",
+                    "Bash": "devicon-bash-plain colored"
+                }
+            },
+            {
+                "name": "Frameworks",
+                "content": {
+                    "Bootstrap": "devicon-bootstrap-plain colored",
+                    "Flask": "devicon-flask-plain",
+                    "Node.js": "devicon-nodejs-plain colored",
+                    "Express.js": "devicon-express-original colored"
+                }
+            },
+            {
+                "name": "Database Management",
+                "content": {
+                    "MySQL": "devicon-mysql-plain colored",
+                    "SQLite": "devicon-sqlite-plain colored",
+                    "MongoDB": "devicon-mongodb-plain colored"
+                }
+            },
+            {
+                "name": "Tools",
+                "content": {
+                    "Git": "devicon-git-plain colored",
+                    "GitHub": "devicon-github-plain",
+                    "Figma": "devicon-figma-plain colored",
+                    "Canva": "devicon-canva-plain colored",
+                    "MS Office": "fa-brands fa-microsoft"
+                }
+            },
+            {
+                "name": "IDEs",
+                "content": {
+                    "VS Code": "devicon-vscode-plain colored",
+                    "Replit": "devicon-replit-plain colored",
+                    "PyCharm": "devicon-pycharm-plain colored",
+                    "Eclipse": "devicon-eclipse-plain colored"
+                }
+            }
+        ]
+    },
+    "DSML": {
+        "title": "Data Science & Machine Learning",
+        "colorClass":"neonPink",
+        "sections": [
+            {
+                "name": "Skills",
+                "content": ["Data Analysis", "Data Visualization", "Web Development", "Deployment"]
+            },
+            {
+                "name": "Languages",
+                "content": {
+                    "Python": "devicon-python-plain colored",
+                    "SQL": "devicon-sqlite-plain colored"
+                }
+            },
+            {
+                "name": "Libraries & Frameworks",
+                "content": {
+                    "Pandas": "devicon-pandas-original colored",
+                    "NumPy": "devicon-numpy-original colored",
+                    "Matplotlib": "devicon-matplotlib-plain colored",
+                    "Seaborn": "devicon-seaborn-original",
+                    "Scikit-Learn": "devicon-scikitlearn-plain colored"
+                }
+            },
+            {
+                "name": "Databases",
+                "content": {
+                    "MySQL": "devicon-mysql-plain colored",
+                    "PostgreSQL": "devicon-postgresql-plain colored",
+                    "MongoDB": "devicon-mongodb-plain colored"
+                }
+            },
+            {
+                "name": "Deployment",
+                "content": {
+                    "Flask": "devicon-flask-plain",
+                    "RestAPI": "devicon-restapi-plain colored"
+                }
+            },
+            {
+                "name": "Tools",
+                "content": {
+                    "Git": "devicon-git-plain colored",
+                    "GitHub": "devicon-github-plain",
+                    "Jupyter Notebook": "devicon-jupyter-plain colored",
+                    "VS Code": "devicon-vscode-plain colored",
+                    "Colab": "devicon-colab-plain colored"
+                }
+            }
+        ]
+    }
+}

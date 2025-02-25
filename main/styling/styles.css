@@ -1,0 +1,478 @@
+/* GENERAL */
+body{
+    margin:0px;
+    padding:0px;
+    color: var(--primary); /*Color changing*/
+    font-family: "Courier New", Courier, monospace !important;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+/* THEME */
+:root {
+    --primary: white;
+    --background: black;
+    --secondary: #3f489b;
+    --highlight1: aqua;
+    --highlight2: #ff66c4;
+    --highlight3: #8c52ff;
+}
+
+.glow{
+    font-weight: bold;
+    text-shadow: 0px 0px 20px var(--primary);
+
+}
+.neonBlue{
+color:var(--highlight1);
+text-shadow: 0px 0px 20px var(--highlight1);
+font-weight: bold;
+}
+.neonPink{
+color: var(--highlight2);
+text-shadow: 0px 0px 20px var(--highlight2);
+font-weight: bold;
+}
+.neonPurple{
+color:var(--highlight3);
+text-shadow: 0px 0px 20px var(--highlight3);
+font-weight: bold;
+}
+
+.btnBlue{
+    color:var(--highlight1);
+    border:1px solid;
+    transition: all 0.5s ease;
+}
+.btnBlue:hover{
+    background-color: rgba(0, 255, 255, 0.547);
+    border:1px solid var(--highlight1);
+    color:var(--primary);
+    box-shadow: 0px 0px 10px var(--highlight1);
+    font-weight: bold;
+}
+
+.btnPink{
+    color: var(--highlight2);
+    border:1px solid;
+    transition: all 0.5s ease;
+}
+.btnPink:hover{
+    background-color:#ff66c463;
+    border:1px solid var(--highlight2);
+    color:var(--primary);
+    box-shadow: 0px 0px 10px var(--highlight2);
+    font-weight: bold;
+
+}
+
+.btnPurple{
+    color:var(--highlight3);
+    border:1px solid;
+    transition: all 0.5s ease;
+}
+.btnPurple:hover{
+    background-color: #8c52ff51;
+    border:1px solid var(--highlight3);
+    color:var(--primary);
+    box-shadow: 0px 0px 10px var(--highlight3);
+    font-weight: bold;
+}
+
+
+.pageHeading{
+    margin-right:auto;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+    font-size:5vh;
+    font-weight: bold;
+}
+
+/* SLIDES */
+.slides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 99vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    color:var(--primary);
+    background-color: var(--background); /*Color changing*/
+    /* border: 2px solid red; Debug */
+    padding-inline:2vh;
+    border-bottom:1px solid rgba(169, 169, 169, 0.038);
+
+}
+/* Backgrounds */
+#Home{
+    background: url(../../resources/img/DarkBackgroud/Home.png);
+    background-size: cover;
+    background-position: center;
+}
+#About{
+    background: url(../../resources/img/DarkBackgroud/About.png);
+    background-size: cover;
+    background-position: center;
+}
+#Experience{
+    background: url(../../resources/img/DarkBackgroud/Experience.png);
+    background-size: cover;
+    background-position: center;
+}
+#ProjectIntro{
+    background: url(../../resources/img/DarkBackgroud/projectIntro.png);
+    background-size: cover;
+    background-position: center;
+}
+#Project{
+    background: url(../../resources/img/DarkBackgroud/Project.png);
+    background-size: cover;
+    background-position: center;
+}
+#Contact{
+    background: url(../../resources/img/DarkBackgroud/Contact.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* NAVBAR */
+#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Distributes content evenly */
+    align-items: center;
+    height: 90vh;
+    width: 3vw;
+    min-width: 30px;
+    backdrop-filter: blur(5px);
+    border: 0.1vh solid var(--primary);
+    border-radius: 2vh;
+    position: fixed;
+    top: 5vh;
+    right: 0.8vw;
+    z-index: 1000;
+    overflow: auto; /* Allows scrolling if necessary */
+    padding: 1vh 0; /* Ensures spacing inside */
+}
+.hamburger {
+    cursor: pointer;
+    color:var(--primary);
+    display: none;
+}
+/* Adjust navigation container */
+#navigation {
+    display: flex;
+    flex-direction: column; /* Stack links inside */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Fit inside navbar */
+    font-size: 2vh; /* Reduce font size to fit */
+    text-align: center;
+}
+/* Adjust navigation links */
+#navigation a {
+    writing-mode: vertical-rl; /* Vertical text */
+    padding: 1vh 0;
+    text-decoration: none;
+    color: var(--primary); /*Color changing*/
+}
+/* Adjust icons section */
+#connects {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh; /* Resize icon */
+    width: 100%; /* Fit inside navbar */
+}
+#theme {
+    font-size: 3vh; /* Resize icon */
+}
+.icon {
+    font-size: 2vh;
+    margin: 1vh;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+#connects .icon{
+    color: var(--primary);
+}
+#theme .icon{
+    color: var(--primary);
+}
+.navbar .icon:hover {
+    transform: scale(1.2);
+    color:var(--secondary);
+    text-shadow: 0px 0px 10px var(--secondary);
+}
+.nav{
+    transition: all 0.5s ease;
+}
+.nav:hover{
+    scale: 1.1;
+}
+.nav.active {
+    color: var(--primary) !important;
+    text-shadow: 0px 0px 10px var(--primary);
+    font-weight: bolder !important;
+}
+
+/* HOME */
+
+/* SEARCH*/
+#searchContainer{
+    width:80vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#searchContainer textarea{
+    width:90%;
+    height:4vh;
+    background-color: var(--secondary);
+    color: var(--primary);
+    resize: none;
+    vertical-align: text-bottom;
+    font-size: 2.5vh;
+}
+textarea::placeholder, 
+input::placeholder {
+    color: var(--primary);
+    opacity: 1; /* Ensures full visibility */
+}
+#searchContainer button{
+    display: flex;
+    height:5vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+/* INTRODUCTION */
+#Tanmay{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary); /*Color changing*/    
+    /* new photo after */
+    margin-top: 15vh;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.hello{
+    font-size: 2vw;
+    text-align: right;
+    margin-bottom: -2vh;
+}
+.name{
+    font-size: 3vw;
+    text-align: right;
+    margin-top: 0px;
+    font-weight: bolder;
+    color:var(--secondary);
+}
+.resume{
+    margin-top:-2vh;
+    padding:0.3vh !important;
+    color: grey !important;
+    font-size: 2vh !important;
+}
+.resume:hover{
+    color: var(--primary) !important;
+}
+/* .image{ */
+    /* border:2px solid peachpuff; */
+    /* padding:2.7vw;
+    border-radius: 50%;
+    background:url(../../resources/img/DP/developer.png);
+    background-size: cover;
+    background-position: center;
+} */
+.bgForImage{
+    /* background-color: var(--backgroud); */
+    background:url(../../resources/img/DP/developer.png);
+    background-size: cover;
+    background-position: center;
+    height: 27vw;
+    width: 27vw;
+    /* border: 1px solid var(--secondary); */
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgForImage img {
+    transform: rotate(-10deg);
+    margin-bottom: 50px;
+    max-width: 100%;  /* Prevents the image from exceeding the div width */
+    max-height: 100%; /* Prevents the image from exceeding the div height */
+    object-fit: contain; /* Ensures the full image is visible without distortion */
+}
+
+
+
+
+
+
+/* PHONE MEDIA ADJUSTMENTS */
+@media(aspect-ratio< 1){
+    /* GENERAL */
+    .pageHeading{
+        margin-top: 4vh;
+        font-size: 3vh;
+    }
+    /* MAVBAR */
+    #theme, #connects ,#navigation{
+        display:none;
+    }
+    #connects{
+        flex-direction: row;
+    }
+    #navigation a {
+        writing-mode: horizontal-tb;
+        font-weight: bold;
+    }
+    .hamburger {
+        position: absolute;
+        top:1vw;
+        right:4vw;
+        font-size: 3.5vh;
+        display:block;
+    }
+    #navbar{
+        background-color: none;
+        backdrop-filter: blur(0px);
+        padding-top: 20vh;
+        justify-content: flex-start;
+        align-items: center;
+        height: 6vh;
+        width:10vw;
+        top: 2vh;
+        border:none;
+    }
+    #navbar.show{
+        background-color: rgba(0, 0, 0, 0.707);
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        right: 0;
+        border-radius: 0;
+        backdrop-filter: blur(5px);
+    }
+    #theme.show{
+        display:flex;
+    }
+    #theme .icon{
+        color:white;
+    }
+    #connects .icon{
+        color:white;
+    }
+    #connects.show{
+        display:flex;
+    }
+    #navigation.show{
+        display:flex;
+    }
+    #navigation a{
+        color:white;
+    }
+    .nav.active {
+        color: white !important;
+        text-shadow: 0px 0px 10px white;
+    }
+
+    /* INTRODUCTION */
+    #Tanmay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--primary); /*Color changing*/
+        margin-top: 10vh;
+    }
+    .bgForImage{
+        height: 40vh;
+        width: 40vh;
+       
+    }
+    .image{
+        padding:4.2vh;
+    }
+    .hello{
+        font-size: 3vh;
+        text-align: right;
+        margin-bottom: -2vw;
+    }
+    .name{
+        font-size: 5vh;
+        text-align: right;
+        margin-top: 0px;
+        font-weight: bolder;
+        color:var(--secondary);
+    }
+
+    /* SEARCH */
+    #searchContainer{
+        width:80vw;
+        height: 10vh;
+        margin-right: 10vw;
+        
+    }
+    #searchContainer textarea{
+        width:90%;
+        height:7vw;
+        background-color: var(--secondary);
+        color: var(--primary);
+        resize: none;
+        vertical-align: text-bottom;
+        font-size: 2.5vh;
+    }
+    textarea::placeholder, 
+    input::placeholder {
+        color: var(--primary);
+        opacity: 1; /* Ensures full visibility */
+    }
+    #searchContainer button{
+        margin-left:1vw;
+        display: flex;
+        height:8vw;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5vh;
+    }
+    .btn-text{
+        display:none;
+    }
+}
+
+@media(aspect-ratio> 1){
+    .navbar {
+        /* background-color: rgba(0, 0, 0, 0.488); */
+        
+    }
+    #Tanmay{
+        margin-right: auto;
+    }
+}

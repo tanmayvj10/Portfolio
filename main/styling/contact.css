@@ -1,0 +1,63 @@
+.contactDetails{
+    border: 2px solid var(--primary); /* Color Changing */
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    padding:1vh;
+    width:80vw;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1vh;
+    margin-bottom: 0;
+    border-bottom: 2px solid darkgrey;
+}
+.header h4{
+    margin:0;
+}
+.links{
+    padding-top:2vh;
+}
+.links p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.cursor::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.6s infinite;
+    font-weight: bold;
+}
+#refreshIcon{
+    transition: all 0.5s ease;
+}
+#refreshIcon:hover{
+transform: rotate(45deg);
+}
+
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+
+.copyright{
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    background-color: var(--background);
+    padding:2vw;
+    width: 100vw;
+}
+@media(aspect-ratio> 1) {
+    .copyright{
+    border-radius:2vh;
+    padding:2vh;
+}
+}

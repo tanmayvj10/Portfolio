@@ -1,0 +1,99 @@
+#About div{
+    /* border:2px solid var(--primary); */
+}
+.aboutContent{
+    width:90vw;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.header p{
+    padding:0;
+    margin:0;
+
+}
+/*Color*/
+.header a{
+    margin-left: auto;
+    background-color: var(--secondary); /*Color*/ 
+    border: 1px solid var(--secondary); /*Color*/
+    color:var(--primary); /*Color*/
+    text-decoration: none;
+    font-size:1.5vh;
+
+}
+.description{
+    text-align: left;
+    background-color: var(--secondary)44; /*Color*/
+    padding:1.5vh;
+    border-radius: 2vh;
+}
+#educations{
+}
+.tile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+#description{
+    text-align: left;
+}
+.viewProject{
+    background: transparent;
+    border: 1px solid var(--primary); /*Color*/
+    color:var(--primary); /*Color*/
+}
+.leetcodeProfile{
+    background-color: var(--secondary); /*Color*/
+    border: 2px solid var(--secondary); /*Color*/
+    color:var(--primary); /*Color*/
+    display: inline-block;
+    text-decoration: none;
+    padding-inline: 2px;
+}
+.tile img{
+    background-color: white; /*Color*/
+    border-radius: 50%;
+    margin-inline: 2vw;
+}
+@media(aspect-ratio>1){
+    .aboutContent{
+        display: flex;
+    }
+    #educations{
+        width:100vw;
+    }
+    #description{
+        margin-inline: 2vw;
+        margin-top:7vh;
+    }
+    .header p{
+        font-size:4vh;
+    }
+    .tile img{
+        width:10vh;
+        height:10vh;
+    }
+    .header button{
+        font-size: 1.5vh;
+    }
+}
+@media(aspect-ratio<1){
+    .description{padding:1vh;}
+    #description{
+        text-align: center;
+    }
+    .header p{
+        font-size:5vw;
+    }
+    .tile img{
+        width:15vw;
+        height:15vw;
+    }
+    .header button{
+        font-size: 1vh;
+    }
+}
