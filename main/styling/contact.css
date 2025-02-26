@@ -18,6 +18,7 @@
 }
 .links{
     padding-top:2vh;
+    word-wrap: break-word;
 }
 .links p{
     margin-top: 0;
